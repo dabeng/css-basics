@@ -10,6 +10,34 @@
 - 通配选择器， 如 *{}
 
 内联样式 > ID 选择器 > 类选择器 = 属性选择器 = 伪类选择器 > 标签选择器 = 伪元素选择器
+
+### nth-child selelctor
+比如我们有一个列表，包含10个以上的item：
+```html
+<ol>
+  <li>e4rt</li>
+  <li>66ert</li>
+  <li>i9etr</li>
+  <li>fsdg</li>
+  <li>gh</li>
+  <li>gh</li>
+  <li>fwr</li>
+  <li>ue56</li>
+  <li>34s</li>
+</ol>
+```
+为开头的前2个item和结尾的后2个item加红色
+```css
+li:nth-child(-n+2),li:nth-last-child(-n+2) {
+    color: red;
+}
+```
+为中间的第4个～6个item加蓝色
+```css
+li:nth-child(n+4):nth-child(-n+6) {
+  color: blue;
+}
+```
 ## Resopnsive Design
 ## Flexbox
 ### CSS Grid vs Flexbox
