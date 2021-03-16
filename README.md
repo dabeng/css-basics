@@ -39,6 +39,48 @@ li:nth-child(n+4):nth-child(-n+6) {
 }
 ```
 ## Resopnsive Design
+### 举例说明响应式设计
+```html
+<div class="left">
+  <p>Left</p>
+</div>
+
+<div class="main">
+  <p>Main Content</p>
+</div>
+
+<div class="right">
+  <p>Right</p>
+</div>
+```
+```css
+.left {
+  background-color:#2196F3;
+  padding:20px;
+  float:left;
+  width:20%; /* The width is 20%, by default */
+}
+
+.main {
+  background-color:#f1f1f1;
+  padding:20px;
+  float:left;
+  width:60%; /* The width is 60%, by default */
+}
+
+.right {
+  background-color:#4CAF50;
+  padding:20px;
+  float:left;
+  width:20%; /* The width is 20%, by default */
+}
+
+/* Use a media query to add a break point at 800px: */
+@media screen and (max-width:800px) {
+ .left  , .main, .right {width:100%;}
+}
+```
+
 ## Flexbox
 ### CSS Grid vs Flexbox
 1. CSS Grid Layout is a two-dimensional system, meaning it can handle both columns and rows, unlike flexbox which is largely a one-dimensional system (either in a column or a row).
