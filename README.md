@@ -1,4 +1,13 @@
 # CSS
+## Layout
+### 多个块状元素的水平垂直居中
+```css
+#container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+```
 ## Selector
 ### Priority
 - ID 选择器， 如 #id{}
