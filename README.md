@@ -8,6 +8,14 @@
   align-items: center; /* This defines the alignment along the cross axis */
  }
 ```
+equivalent tailwindwcss utility classes
+```html
+<div class="flex justify-center items-center">
+  <div>01</div>
+  <div>02</div>
+  <div>03</div>
+</div>
+```
 ## Selector
 ### Priority
 - ID 选择器， 如 #id{}
