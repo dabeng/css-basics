@@ -4,8 +4,8 @@
 ```css
 #container{
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: center; /* This defines the alignment along the main axis */
+  align-items: center; /* This defines the alignment along the cross axis */
  }
 ```
 ## Selector
